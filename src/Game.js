@@ -14,9 +14,10 @@ function Game(){
   })
   
   function handleClick(){
-    setSide(getRandBool());
+    let bool = getRandBool();
+    setSide(bool);
     
-    side ? ++count.heads : ++ count.tails;
+    bool ? ++count.heads : ++ count.tails;
     ++count.total;
     
     setCount(count);
